@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+input[type="file"] {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#puzzleContainer, #wordPuzzleContainer {
+    position: relative;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+#puzzleContainer canvas, #wordPuzzleContainer canvas {
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+#downloadPuzzleButton, #downloadWordPuzzleButton {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#downloadPuzzleButton button, #downloadWordPuzzleButton button {
+    background-color: #007bff;
+}
+
+#downloadPuzzleButton button:hover, #downloadWordPuzzleButton button:hover {
+    background-color: #0056b3;
+}
+#puzzleContainer {
+    position: relative;
+    width: 600px; /* Adjust width as needed */
+    height: 600px; /* Adjust height as needed */
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    background-image: url('data:image/png;base64,...'); /* Optional: Add background if desired */
+}
+
+#puzzleContainer canvas {
+    position: absolute;
+}
+
